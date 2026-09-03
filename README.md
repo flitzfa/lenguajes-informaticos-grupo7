@@ -1,5 +1,5 @@
-Grupo 7: Lenguajes informaticos
-Participantes
+# Grupo 7: Lenguajes informaticos
+## Participantes
 ★ Fabricio Enriquez
 ★ Nicolás Bazán
 ★ Gabriel Tamone
