@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #1A4731;
+    background-color: #F7F9FA;
+}
+
+a {
+    color: #2D6A4F;
+}
+
+a:hover {
+    color: #E8611A;
+}
+
+header {
+    background-color: #1A4731;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #E8611A;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section > article:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+aside {
+    padding: 1.5rem;
+    border: 1px solid #2D6A4F;
+    background-color: white;
+}
+
+aside h2 {
+    color: #1A4731;
+}
+
+section article p {
+    margin: 0 0 1rem 0;
+}
+
+section article p a {
+    text-decoration: none;
+}
+
+section article p a:hover {
+    text-decoration: underline;
+}
+
+section > article:last-of-type {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #2D6A4F;
+    background-color: white;
+}
+
+section > article:last-of-type h3 {
+    margin-top: 0;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #1A4731;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #E8611A;
+}
+
+footer address {
+    font-style: normal;
+}
