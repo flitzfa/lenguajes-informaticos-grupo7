@@ -1,17 +1,38 @@
-.nav-bar ul{
-    background-color: rgba(240, 240, 240, 0.993);
+/* =========================
+   VARIABLES
+========================= */
+
+:root {
+    --color-principal: #214E34;
+    --color-secundario: #DCE8D6;
+    --color-acento: #4F7D54;
+    --color-fondo: #F7F5EC;
+    --color-texto: #1F2D24;
+
+    --fuente-principal: "Poppins", sans-serif;
 }
 
-.nav-bar ul li {
-    padding-top: 3px;
-    padding-bottom: 3px;
-    margin-bottom: 5px;
-    
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-bar ul li a{
-    padding: 4px;
-    border-radius: 40px;
-    background-color: rgb(216, 212, 205);
-    text-decoration: none;
+
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 16px;
+    line-height: 1.6;
+
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
 }
