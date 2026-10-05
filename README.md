@@ -3,4 +3,4 @@
 ★ Fabricio Enriquez
 ★ Nicolás Bazán
 ★ Gabriel Tamone
-★ Mateo Lucas Vallejo
+★ Mateo Lucas Vallejos
