@@ -36,3 +36,426 @@ body {
     background-color: var(--color-fondo);
     color: var(--color-texto);
 }
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: var(--color-principal);
+    color: white;
+
+    padding: 1.5rem 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+header h1 {
+    color: white;
+}
+
+
+/* Los hr de contacto no son necesarios visualmente */
+
+header hr {
+    display: none;
+}
+
+
+/* =========================
+   NAVEGACIÓN
+========================= */
+
+header nav ul {
+    display: flex;
+
+    gap: 1.5rem;
+
+    list-style: none;
+}
+
+header nav a {
+    color: white;
+
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: var(--color-secundario);
+}
+
+
+/* Algunas páginas tienen el nav
+   separado del header */
+
+body > nav {
+    background-color: var(--color-principal);
+
+    padding: 1rem 2rem;
+
+    text-align: center;
+}
+
+body > nav a {
+    color: white;
+
+    text-decoration: none;
+
+    margin: 0 0.7rem;
+}
+
+body > nav a:hover {
+    color: var(--color-secundario);
+}
+
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+
+main {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 3rem 2rem;
+}
+
+main h2 {
+    color: var(--color-principal);
+
+    margin-bottom: 1.5rem;
+}
+
+
+/* =========================
+   ARTÍCULOS GENERALES
+========================= */
+
+/*
+   Se conserva el diseño que ya tenía
+   Contacto.
+
+   :not(.lugar-card) evita que estas reglas
+   afecten las tarjetas de lugares.html.
+*/
+
+section > article:first-of-type:not(.lugar-card) {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 2rem;
+}
+
+section > article:first-of-type:not(.lugar-card) > p:first-child {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================
+   ENLACES EN ARTÍCULOS
+========================= */
+
+article a {
+    color: var(--color-acento);
+
+    text-decoration: none;
+}
+
+article a:hover {
+    color: var(--color-principal);
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   ASIDE
+========================= */
+
+aside {
+    background-color: var(--color-secundario);
+
+    padding: 1.5rem;
+}
+
+aside h2 {
+    color: var(--color-principal);
+
+    margin-bottom: 1rem;
+}
+
+
+/* =========================
+   ÚLTIMO ARTÍCULO
+========================= */
+
+/*
+   Esta regla mantiene el cuadro de
+   horarios de contacto.html.
+
+   Lugares queda excluido.
+*/
+
+section > article:last-of-type:not(.lugar-card) {
+    margin-top: 2rem;
+
+    padding: 1.5rem;
+
+    background-color: white;
+
+    border: 1px solid var(--color-acento);
+}
+
+section > article:last-of-type:not(.lugar-card) h3 {
+    color: var(--color-principal);
+
+    margin-bottom: 1rem;
+}
+
+section > article:last-of-type:not(.lugar-card) ul {
+    padding-left: 1.5rem;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: var(--color-principal);
+    color: white;
+
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer a {
+    color: var(--color-secundario);
+}
+
+footer a:hover {
+    color: white;
+}
+
+
+/* =========================================
+   PÁGINA LUGARES
+========================================= */
+
+
+/* =========================
+   PRESENTACIÓN
+========================= */
+
+.lugares-main {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 3rem 2rem;
+}
+
+.lugares-presentacion {
+    margin-bottom: 2rem;
+}
+
+.lugares-presentacion h2 {
+    font-size: 2rem;
+
+    color: var(--color-principal);
+
+    margin-bottom: 0.5rem;
+}
+
+.lugares-presentacion p {
+    color: #44534A;
+}
+
+
+/* =========================
+   ATAJOS
+========================= */
+
+.lugares-atajos {
+    background-color: var(--color-secundario);
+
+    padding: 1rem 1.5rem;
+
+    margin-bottom: 2rem;
+}
+
+.lugares-atajos h3 {
+    color: var(--color-principal);
+
+    margin-bottom: 0.8rem;
+}
+
+.lugares-atajos ul {
+    display: flex;
+
+    gap: 2rem;
+
+    list-style: none;
+
+    padding: 0;
+}
+
+.lugares-atajos a {
+    color: var(--color-principal);
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.lugares-atajos a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   LISTA DE LUGARES
+========================= */
+
+.lista-lugares {
+    margin-bottom: 2rem;
+}
+
+.lista-lugares > h2 {
+    color: var(--color-principal);
+
+    margin-bottom: 1.5rem;
+}
+
+
+/* =========================
+   TARJETAS DE LUGARES
+========================= */
+
+.lista-lugares > .lugar-card {
+    display: flex;
+
+    background-color: white;
+
+    border: 1px solid var(--color-secundario);
+
+    border-radius: 6px;
+
+    padding: 0;
+
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   IMÁGENES DE LUGARES
+========================= */
+
+.lugar-card img {
+    width: 280px;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   INFORMACIÓN
+========================= */
+
+.lugar-info {
+    flex: 1;
+
+    padding: 1.5rem;
+}
+
+.lista-lugares > .lugar-card .lugar-info h3 {
+    color: var(--color-principal);
+
+    margin-bottom: 0.3rem;
+}
+
+.lugar-info h4 {
+    color: var(--color-principal);
+
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.lugar-info p {
+    margin-bottom: 0.8rem;
+}
+
+
+/* =========================
+   UBICACIÓN
+========================= */
+
+.ubicacion {
+    color: var(--color-acento);
+}
+
+
+/* =========================
+   LISTAS DE ACTIVIDADES
+========================= */
+
+.lista-lugares > .lugar-card ul,
+.lista-lugares > .lugar-card ol {
+    padding-left: 1.5rem;
+
+    margin-bottom: 1rem;
+}
+
+
+/* =========================
+   RECOMENDACIÓN
+========================= */
+
+.recomendacion {
+    background-color: var(--color-secundario);
+
+    padding: 0.7rem 1rem;
+
+    border-left: 4px solid var(--color-acento);
+
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   CONSEJOS
+========================= */
+
+.consejos {
+    background-color: var(--color-secundario);
+
+    padding: 1.5rem;
+
+    margin-top: 2rem;
+}
+
+.consejos h3 {
+    color: var(--color-principal);
+
+    margin-bottom: 0.5rem;
+}
