@@ -37,6 +37,92 @@ body {
     color: var(--color-texto);
 }
 
+/* INICIO */
+
+/* MENÚ DE NAVEGACIÓN */
+
+.img-inicio {
+    width: 200px;
+    border-radius: 15%;
+}
+
+.inicio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-principal);
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+
+}
+
+.botones-menu {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+
+.botones-menu:hover {
+    border-bottom: 2px solid var(--color-acento);
+}
+
+@media (max-width: 430px) {
+    .inicio {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+/* FLEXBOX INICIO */
+
+.contenedor-inicio {
+  display: flex;         /* Coloca la imagen y el texto en fila */
+  align-items: center;   /* Alinea el texto verticalmente al centro */
+  gap: 50px;             /* Crea espacio de separación entre la imagen y el texto */
+  background-color: var(--color-secundario); /* Color de fondo del contenedor */
+}
+
+.imagen-inicio {
+  width: 400px;          /* Ajusta el ancho de la imagen a tu gusto */
+  height: auto;          /* Mantiene la proporción de la imagen */
+}
+
+.text-img-inicio {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--color-principal);
+    border-bottom: 2px solid transparent;
+
+}
+
+.text-img-inicio:hover {
+    border-bottom: 2px solid var(--color-acento)
+}
+
+.boton-inicio {
+    font-size: 30px;
+    padding: 15px 35px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-color: var(--color-principal);
+    cursor: pointer;
+    transition: .3s ease; /* Transición suave para el efecto hover */
+}
+
+.boton-inicio:hover {
+    border: 2px solid var(--color-acento);
+    background-color: transparent;
+    color: var(--color-acento);
+}
+
 
 /* =========================
    HEADER
