@@ -39,19 +39,26 @@ body {
 
 /* INICIO */
 
+
 /* MENÚ DE NAVEGACIÓN */
+
+header.header-inicio {
+    display: flex;
+    flex-direction: column; 
+}
+
 
 .titulo-inicio{
     font-family: var(--fuente-principal);
-    font-size: 40px;
+    font-size: 25px;
     line-height: 1.6;
 
-    background-color: var(--color-fondo);
-    color: var(--color-texto)
+    background-color:transparent;
+    color: white;
 }
 
 .img-inicio {
-    width: 200px;
+    width: 150px;
     border-radius: 15%;
 }
 
@@ -60,12 +67,12 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: var(--color-principal);
+    gap: 450px;
 }
 
 .menu {
     display: flex;
     gap: 40px;
-
 }
 
 .botones-menu {
