@@ -41,6 +41,15 @@ body {
 
 /* MENÚ DE NAVEGACIÓN */
 
+.titulo-inicio{
+    font-family: var(--fuente-principal);
+    font-size: 40px;
+    line-height: 1.6;
+
+    background-color: var(--color-fondo);
+    color: var(--color-texto)
+}
+
 .img-inicio {
     width: 200px;
     border-radius: 15%;
