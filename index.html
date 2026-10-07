@@ -1,50 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="css/estilos.css">
     <title>TURISMO BUENOS AIRES</title>
 </head>
-<body>
+<body class="pagina-inicio">
 
-    <header class="header-inicio">
+    <header class="site-header">
 
-      <h1 class="titulo-inicio"> Turismo BA</h1>
-        <hr/>  
+                <h1>Turismo BA</h1>
 
-        <nav class="inicio">
+        <nav class="site-nav">
 
-        <img class="img-inicio" src="recursos/Logo.jpg" alt="Logo">
+            <img class="nav-logo" src="Recursos/Logo.jpg" alt="Logo de Turismo Buenos Aires">
 
-        <div class="menu">
-            <a class="botones-menu" href="index.html">Inicio</a> 
-            <a class="botones-menu" href="ciudad.html">Sobre BA</a> 
-            <a class="botones-menu" href="lugares.html">Lugares</a> 
-            <a class="botones-menu" href="contacto.html">Contacto</a>
-
-        </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ciudad.html">La ciudad</a></li>
+                <li><a href="lugares.html">Lugares</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
 
         </nav>
 
     </header>
 
-    <div class="contenedor-inicio">
-  <img src="recursos/imagen4.jpg" alt="Descripción de la imagen" class="imagen-inicio">
-  <div class="texto-inicio">
-    <h2>Bienvenido a Turismo Buenos Aires</h2>
-    <p>Historia, cultura, naturaleza y mucho más en una ciudad que siempre sorprende.</p>
-    
-    <a href="lugares.html">
-        <button class="boton-inicio">Descubrir lugares &rarr;</button>
-    </a>
-    
-    </div>
-</div>
-		
+    <main class="contenedor-inicio">
+        <img src="Recursos/imagen4.jpg" alt="Descripción de la imagen" class="imagen-inicio">
+        <div class="texto-inicio">
+            <h2>Bienvenido a Turismo Buenos Aires</h2>
+            <p>Historia, cultura, naturaleza y mucho más en una ciudad que siempre sorprende.</p>
+            <a class="boton-inicio" href="lugares.html">Descubrir lugares &rarr;</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <address>
+            Oficina de Turismo de Buenos Aires<br>
+            Av. del Libertador 1818<br>
+            Teléfono:
+            <a href="tel:+541116042015">11-1604-2015</a><br>
+            Gmail:
+            <a href="mailto:Turismo_BuenosAires@gmail.com">
+                Turismo_BuenosAires@gmail.com
+            </a>
+        </address>
+
+        <p>2026 Turismo Buenos Aires.</p>
+    </footer>
 
 </body>
 </html>
