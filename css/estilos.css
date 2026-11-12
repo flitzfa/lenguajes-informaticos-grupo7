@@ -139,6 +139,23 @@ main {
     color: var(--color-acento);
 }
 
+.btn-noticias {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: var(--color-principal);
+    color: white;
+    text-decoration: none;
+}
+
+.btn-noticias:hover {
+    border-color: var(--color-acento);
+    background-color: transparent;
+    color: var(--color-acento);
+}
+
 /* Página Ciudad */
 .pagina-ciudad main section {
     margin-bottom: 2rem;
