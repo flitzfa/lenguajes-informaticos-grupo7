@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f8f1;
+    color: #173d32;
+}
+
+.site-header {
+    background-color: #174b3b;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 5%;
+    min-height: 75px;
+}
+
+.header-logo h1 {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #c8d8c8;
+}
+
+.header-logo p {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+}
+
+
+.site-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #e2eae4;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    padding-bottom: 8px;
+    transition: 0.3s;
+}
+
+.site-nav a:hover {
+    color: white;
+}
+
+.site-nav a.activo {
+    color: white;
+    font-weight: 600;
+
+    border-bottom: 2px solid #a9c5a9;
+}
+
+
+
+.contenedor-ciudad {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 25px 0 20px;
+}
+
+
+
+.presentacion-ciudad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dce2d8;
+}
+
+.texto-presentacion {
+    flex: 1;
+}
+
+.texto-presentacion h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #174b3b;
+}
+
+.texto-presentacion p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #354b43;
+}
+
+.imagen-ciudad {
+    width: 48%;
+    height: 115px;
+
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.caracteristicas {
+    margin-top: 16px;
+}
+
+.caracteristicas h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #173d32;
+}
+
+.caracteristicas ul {
+    background-color: #edf1e7;
+
+    list-style: none;
+    padding: 9px 18px;
+
+    border-radius: 6px;
+}
+
+.caracteristicas li {
+    position: relative;
+
+    font-size: 13px;
+    color: #354b43;
+
+    padding-left: 20px;
+    margin: 3px 0;
+}
+
+.caracteristicas li::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 6px;
+
+    width: 9px;
+    height: 9px;
+
+    background-color: #4c9369;
+    border-radius: 50%;
+}
+
+.barrios {
+    margin-top: 16px;
+}
+
+.barrios h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #173d32;
+}
+
+.contenedor-barrios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+.tarjeta-barrio {
+    background-color: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+
+    text-align: center;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta-barrio:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.tarjeta-barrio img {
+    display: block;
+
+    width: 100%;
+    height: 78px;
+
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.tarjeta-barrio h3 {
+    font-size: 13px;
+    font-weight: 600;
+
+    color: #173d32;
+
+    padding: 7px 3px;
+}
+
+.site-footer {
+    background-color: #d8e5d2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 5%;
+    min-height: 48px;
+}
+
+.footer-titulo {
+    font-size: 13px;
+    font-weight: 600;
+    color: #173d32;
+}
+
+.footer-derechos {
+    font-size: 10px;
+    color: #52665b;
+}
+@media (max-width: 600px) {
+
+    .site-header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .site-nav ul {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .site-nav a {
+        font-size: 12px;
+    }
+
+    .contenedor-ciudad {
+        width: 92%;
+    }
+
+    .presentacion-ciudad {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .texto-presentacion h2 {
+        font-size: 26px;
+    }
+
+    .imagen-ciudad {
+        width: 100%;
+        height: 180px;
+    }
+
+    .contenedor-barrios {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .tarjeta-barrio img {
+        height: 110px;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    .site-nav ul {
+        gap: 10px;
+    }
+
+    .contenedor-barrios {
+        grid-template-columns: 1fr;
+    }
+
+}
