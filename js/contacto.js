@@ -1,5 +1,11 @@
-const boton = document.getElementById("btn-modo");
+const boton = document.getElementById("boton-tema");
+boton.addEventListener("click", function() {
 
-boton.addEventListener("click", () => {
-    document.body.classList.toggle("oscuro");
+    document.body.classList.toggle("modo-oscuro");
+
+    if (document.body.classList.contains("modo-oscuro")) {
+        boton.textContent = "☀️ Modo claro";
+    } else {
+        boton.textContent = "🌙 Modo oscuro";
+    }
 });
