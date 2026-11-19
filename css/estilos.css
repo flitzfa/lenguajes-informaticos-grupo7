@@ -599,6 +599,43 @@ main {
     color: #173d32;
 }
 
+/* Modo oscuro: footer (todas las páginas) */
+.modo-oscuro .site-footer {
+    background-color: #24352d;
+}
+
+/* Modo oscuro: página inicio */
+.modo-oscuro .contenedor-inicio,
+.modo-oscuro .card {
+    background-color: #293a32;
+}
+
+.modo-oscuro .card {
+    color: #eeeeee;
+    border-color: #3b4f45;
+}
+
+.modo-oscuro h4,
+.modo-oscuro h5 {
+    color: #eeeeee;
+}
+
+/* Modo oscuro: página lugares */
+.modo-oscuro .lugares-atajos,
+.modo-oscuro .lugar-card,
+.modo-oscuro .recomendacion,
+.modo-oscuro .consejos {
+    background-color: #293a32;
+}
+
+.modo-oscuro .lugar-card {
+    border-color: #3b4f45;
+}
+
+.modo-oscuro .lugares-atajos a {
+    color: #a9c5a9;
+}
+
 /* Modo oscuro: página contacto */
 .modo-oscuro .contacto-redes,
 .modo-oscuro .contacto-horarios {
@@ -610,11 +647,6 @@ main {
 }
 
 /* Modo oscuro: página ciudad */
-.pagina-ciudad.modo-oscuro {
-    background-color: #18231f;
-    color: #eeeeee;
-}
-
 .pagina-ciudad.modo-oscuro .contenedor-ciudad {
     background-color: #18231f;
 }
@@ -630,10 +662,6 @@ main {
 .pagina-ciudad.modo-oscuro .caracteristicas ul,
 .pagina-ciudad.modo-oscuro .tarjeta-barrio {
     background-color: #293a32;
-}
-
-.pagina-ciudad.modo-oscuro .site-footer {
-    background-color: #24352d;
 }
 
 
