@@ -292,3 +292,57 @@ body {
     }
 
 }
+
+/* BOTÓN MODO OSCURO */
+
+#boton-tema {
+    background-color: #174b3b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* MODO OSCURO */
+
+.modo-oscuro {
+    background-color: #18231f;
+    color: #eeeeee;
+}
+
+.modo-oscuro .contenedor-ciudad {
+    background-color: #18231f;
+}
+
+.modo-oscuro h2,
+.modo-oscuro h3,
+.modo-oscuro p {
+    color: #eeeeee;
+}
+
+.modo-oscuro .caracteristicas ul,
+.modo-oscuro .tarjeta-barrio {
+    background-color: #293a32;
+}
+
+.modo-oscuro .caracteristicas li {
+    color: #eeeeee;
+}
+
+.modo-oscuro .site-footer {
+    background-color: #24352d;
+}
+
+.modo-oscuro .footer-titulo,
+.modo-oscuro .footer-derechos {
+    color: #eeeeee; 
+}
+
+.modo-oscuro #boton-tema {
+    background-color: #d8e5d2;
+    color: #173d32;
+}
+
