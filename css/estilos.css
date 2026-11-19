@@ -440,7 +440,8 @@ main {
 
 .lugar-card img {
     width: 280px;
-    height: auto;
+    flex-shrink: 0;
+    object-fit: cover;
 }
 
 .lugar-info {
