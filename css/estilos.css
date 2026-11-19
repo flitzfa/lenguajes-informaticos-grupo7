@@ -207,6 +207,18 @@ main {
     color: var(--color-acento);
 }
 
+/* Noticias: tarjetas de Bootstrap dentro de la grilla */
+.noticias {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.noticias .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+
 
 /* =========================
    PÁGINA CIUDAD
@@ -663,9 +675,45 @@ main {
 
 }
 
-/* Celulares */
-@media (max-width: 600px) {
+/* Celulares y tablets chicas (768px es el mismo corte que "md" de Bootstrap) */
+@media (max-width: 768px) {
 
+    /* Menos espacio a los costados en pantallas chicas */
+    main,
+    .lugares-main {
+        padding: 2rem 1rem;
+    }
+
+    /* Inicio: la imagen pasa arriba y el texto abajo */
+    .pagina-inicio .contenedor-inicio {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+    }
+
+    .imagen-inicio {
+        width: 100%;
+        max-width: 400px;
+        align-self: center;
+    }
+
+    /* Lugares: la foto de cada tarjeta pasa arriba del texto */
+    .lugar-card {
+        flex-direction: column;
+    }
+
+    .lugar-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .lugares-atajos ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    /* Ciudad: la imagen pasa abajo del texto y los barrios quedan en 2 columnas */
     .pagina-ciudad .contenedor-ciudad {
         width: 92%;
     }
@@ -693,10 +741,12 @@ main {
         height: 110px;
     }
 
+    /* Contacto: una sola columna */
     .contacto-info {
         grid-template-columns: 1fr;
     }
 
+    /* Footer: todo en columna y centrado */
     .site-footer {
         flex-direction: column;
         gap: 1rem;

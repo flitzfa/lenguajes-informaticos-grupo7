@@ -47,7 +47,7 @@
     </header>
 
     <main class="contenedor-inicio">
-        <img src="Recursos/imagen4.jpg" alt="Descripción de la imagen" class="imagen-inicio">
+        <img src="Recursos/imagen4.jpg" alt="Edificio del Congreso de la Nación con su cúpula verde" class="imagen-inicio">
         <div class="texto-inicio">
             <h2>Bienvenido a Turismo Buenos Aires</h2>
             <p>Historia, cultura, naturaleza y mucho más en una ciudad que siempre sorprende.</p>
@@ -57,12 +57,14 @@
 
 <hr>
 
-<h2>NOTICIAS</h2>
-    <div class="row g-0">
+<!-- Noticias: grilla de Bootstrap (container > row > col) -->
+<section class="container noticias">
+    <h2>NOTICIAS</h2>
+    <div class="row g-4">
 
-        <div class="col">
-        <div class="card">
-  <img src="Recursos/Papa.jpg" class="card-img-top" alt="Imagen de noticia">
+        <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+  <img src="Recursos/Papa.jpg" class="card-img-top" alt="El Papa León XIV con vestimenta ceremonial">
   <div class="card-body">
     <h5 class="card-title">¡Nos visita el Papa!</h5>
     <p class="card-text">Entre sermones, se desataron rumores de que Leon XIV se sometió a una blanqueamiento de piel y que estamos frente al "Papa Negro" del fin de los tiempos que el profeta Nostradamus predijo hace tantos años...</p>
@@ -71,9 +73,9 @@
 </div>
 </div>
 
-<div class="col">
-<div class="card">
-  <img src="Recursos/Parque Centenario.jpg" class="card-img-top" alt="Imagen de noticia">
+<div class="col-12 col-md-6 col-lg-4">
+<div class="card h-100">
+  <img src="Recursos/Parque Centenario.jpg" class="card-img-top" alt="Vista aérea del Parque Centenario">
   <div class="card-body">
     <h5 class="card-title">Parque Centenario: una familia encontró una pata de mono</h5>
     <p class="card-text">El pasado 10 de noviembre, una familia se acercó a un policia de la ciudad para informale que había encontrado lo que parecía ser una "pata de mono" debajo de su banco...</p>
@@ -82,9 +84,9 @@
 </div>
 </div>
 
-<div class="col">
-<div class="card">
-  <img src="Recursos/Bilbioteca Moreno.jpg" class="card-img-top" alt="Logo de seccion">
+<div class="col-12 col-md-6 col-lg-4">
+<div class="card h-100">
+  <img src="Recursos/Bilbioteca Moreno.jpg" class="card-img-top" alt="Edificio de la Biblioteca Nacional Mariano Moreno">
   <div class="card-body">
     <h5 class="card-title">Se encuentra la entrada a la Biblioteca de Babel</h5>
     <p class="card-text">Después de caminar esas tortuosas escaleras, un hombre afirma haberse chocado con la entrada a la Biblioteca de Babel, en la Biblioteca Mariano Moreno...</p>
@@ -93,8 +95,7 @@
 </div>
 </div>
 </div>
-
-
+</section>
 
     <footer class="site-footer">
         <address>
