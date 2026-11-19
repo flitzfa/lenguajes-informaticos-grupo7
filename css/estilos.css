@@ -1,4 +1,6 @@
-/* Variables */
+/* =========================
+   VARIABLES
+========================= */
 :root {
     --color-principal: #214E34;
     --color-secundario: #DCE8D6;
@@ -6,16 +8,29 @@
     --color-fondo: #F7F5EC;
     --color-texto: #1F2D24;
     --fuente-principal: "Poppins", sans-serif;
+
+    /* Navbar */
+    --nav-fondo: #174b3b;
+    --nav-texto-suave: #c8d8c8;
+    --nav-link: #e2eae4;
+    --nav-activo: #a9c5a9;
+    --nav-blanco: #ffffff;
 }
 
-/* Reset */
+
+/* =========================
+   RESET
+========================= */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Estilos generales */
+
+/* =========================
+   ESTILOS GENERALES
+========================= */
 body {
     font-family: var(--fuente-principal);
     font-size: 16px;
@@ -52,53 +67,89 @@ dd {
     margin-bottom: 0.8rem;
 }
 
-/* Header y navegación */
-.site-header {
-    background-color: var(--color-principal);
-    color: white;
-    padding: 1.5rem 2rem;
+
+/* =========================
+   NAVBAR - BOOTSTRAP (personalizaciones)
+   Misma navbar en todas las páginas
+========================= */
+
+/* Header: contenedor de la navbar */
+.header-turismo {
+    display: block;
+    padding: 0;
+    background-color: var(--nav-fondo);
 }
 
-.site-header h1 {
-    color: white;
-    margin-bottom: 1rem;
+/* Colores de Bootstrap reemplazados por los de la paleta */
+.navbar-turismo {
+    --bs-navbar-color: var(--nav-link);
+    --bs-navbar-hover-color: var(--nav-blanco);
+    --bs-navbar-active-color: var(--nav-blanco);
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.4);
+
+    background-color: var(--nav-fondo);
+    padding: 0.6rem 5%;
+    min-height: 75px;
 }
 
-.site-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+/* Logo + nombre de la ciudad (navbar-brand) */
+.logo-navbar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
 }
 
-.site-nav ul {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
+.navbar-turismo .marca-texto h1 {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--nav-texto-suave);
 }
 
-.site-nav a {
-    color: white;
+.navbar-turismo .marca-texto p {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--nav-blanco);
+}
+
+/* Links del menú */
+.navbar-turismo .navbar-nav {
+    gap: 30px;
+}
+
+.navbar-turismo .nav-item {
+    margin: 0;
+}
+
+.navbar-turismo .nav-link {
+    font-size: 14px;
     text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
 }
 
-.site-nav a:hover {
-    color: var(--color-secundario);
+.navbar-turismo .nav-link.active {
+    font-weight: 600;
+    border-bottom-color: var(--nav-activo);
 }
 
-.nav-logo {
-    width: 150px;
-    border-radius: 15%;
-}
 
-/* Contenido principal */
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
 main {
     max-width: 1100px;
     margin: 0 auto;
     padding: 3rem 2rem;
 }
 
-/* Página Inicio */
+
+/* =========================
+   PÁGINA INICIO
+========================= */
 .pagina-inicio .contenedor-inicio {
     display: flex;
     align-items: center;
@@ -156,38 +207,163 @@ main {
     color: var(--color-acento);
 }
 
-/* Página Ciudad */
-.pagina-ciudad main section {
-    margin-bottom: 2rem;
-    padding: 2rem;
-    background-color: white;
-    border: 1px solid var(--color-secundario);
+
+/* =========================
+   PÁGINA CIUDAD
+   (todo va dentro de .pagina-ciudad para no afectar a las otras páginas)
+========================= */
+.pagina-ciudad {
+    background-color: #f7f8f1;
+    color: #173d32;
+    line-height: 1.5;
 }
 
-.pagina-ciudad main section h2 {
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--color-acento);
+.pagina-ciudad p {
+    margin-bottom: 1rem;
 }
 
-.destacado {
-    margin: 1.5rem 0;
-    padding: 1rem;
-    border-left: 5px solid var(--color-acento);
-    background-color: var(--color-secundario);
+.pagina-ciudad .contenedor-ciudad {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 25px 0 20px;
 }
 
+/* Presentación */
+.pagina-ciudad .presentacion-ciudad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dce2d8;
+}
+
+.pagina-ciudad .texto-presentacion {
+    flex: 1;
+}
+
+.pagina-ciudad .texto-presentacion h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #174b3b;
+}
+
+.pagina-ciudad .texto-presentacion p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #354b43;
+}
+
+.pagina-ciudad .imagen-ciudad {
+    width: 48%;
+    height: 115px;
+
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Características */
+.pagina-ciudad .caracteristicas {
+    margin-top: 16px;
+}
+
+.pagina-ciudad .caracteristicas h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #173d32;
+}
+
+.pagina-ciudad .caracteristicas ul {
+    background-color: #edf1e7;
+
+    list-style: none;
+    padding: 9px 18px;
+
+    border-radius: 6px;
+}
+
+.pagina-ciudad .caracteristicas li {
+    position: relative;
+
+    font-size: 13px;
+    color: #354b43;
+
+    padding-left: 20px;
+    margin: 3px 0;
+}
+
+.pagina-ciudad .caracteristicas li::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 6px;
+
+    width: 9px;
+    height: 9px;
+
+    background-color: #4c9369;
+    border-radius: 50%;
+}
+
+/* Barrios */
 .pagina-ciudad .barrios {
+    margin-top: 16px;
+}
+
+.pagina-ciudad .barrios h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #173d32;
+}
+
+.pagina-ciudad .contenedor-barrios {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
 }
 
-.pagina-ciudad .barrio {
-    padding: 1.2rem;
-    border-left: 4px solid var(--color-acento);
-    background-color: var(--color-fondo);
+.pagina-ciudad .tarjeta-barrio {
+    background-color: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+
+    text-align: center;
+
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.pagina-ciudad .tarjeta-barrio:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.pagina-ciudad .tarjeta-barrio img {
+    display: block;
+
+    width: 100%;
+    height: 78px;
+
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.pagina-ciudad .tarjeta-barrio h3 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+
+    color: #173d32;
+
+    padding: 7px 3px;
+}
+
+/* Datos de la ciudad (lista <dl>) */
 .pagina-ciudad dt {
     margin-top: 1rem;
     font-weight: 600;
@@ -198,7 +374,35 @@ main {
     margin-left: 1rem;
 }
 
-/* Página Lugares */
+/* Footer de la página ciudad */
+.pagina-ciudad .site-footer {
+    background-color: #d8e5d2;
+    color: inherit;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+
+    padding: 14px 5%;
+    min-height: 48px;
+}
+
+.pagina-ciudad .footer-titulo {
+    font-size: 13px;
+    font-weight: 600;
+    color: #173d32;
+}
+
+.pagina-ciudad .footer-derechos {
+    font-size: 10px;
+    color: #52665b;
+}
+
+
+/* =========================
+   PÁGINA LUGARES
+========================= */
 .lugares-main {
     max-width: 1100px;
     margin: 0 auto;
@@ -286,7 +490,10 @@ main {
     background-color: var(--color-secundario);
 }
 
-/* Página Contacto */
+
+/* =========================
+   PÁGINA CONTACTO
+========================= */
 .contacto-info {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -312,6 +519,10 @@ main {
     background-color: var(--color-secundario);
 }
 
+.contacto-redes h2 {
+    margin-bottom: 1rem;
+}
+
 .contacto-horarios {
     margin-top: 2rem;
     padding: 1.5rem;
@@ -327,7 +538,10 @@ main {
     padding-left: 1.5rem;
 }
 
-/* Footer */
+
+/* =========================
+   FOOTER
+========================= */
 .site-footer {
     display: flex;
     align-items: center;
@@ -348,4 +562,147 @@ main {
 
 .site-footer a:hover {
     color: white;
+}
+
+
+/* =========================
+   BOTÓN MODO OSCURO
+========================= */
+#boton-tema {
+    background-color: #174b3b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-family: var(--fuente-principal);
+}
+
+
+/* =========================
+   MODO OSCURO
+   (la clase .modo-oscuro la agrega el JavaScript al <body>)
+========================= */
+.modo-oscuro {
+    background-color: #18231f;
+    color: #eeeeee;
+}
+
+.modo-oscuro h2,
+.modo-oscuro h3,
+.modo-oscuro p {
+    color: #eeeeee;
+}
+
+.modo-oscuro #boton-tema {
+    background-color: #d8e5d2;
+    color: #173d32;
+}
+
+/* Modo oscuro: página contacto */
+.modo-oscuro .contacto-redes,
+.modo-oscuro .contacto-horarios {
+    background-color: #293a32;
+}
+
+.modo-oscuro .contacto-info a {
+    color: #a9c5a9;
+}
+
+/* Modo oscuro: página ciudad */
+.pagina-ciudad.modo-oscuro {
+    background-color: #18231f;
+    color: #eeeeee;
+}
+
+.pagina-ciudad.modo-oscuro .contenedor-ciudad {
+    background-color: #18231f;
+}
+
+.pagina-ciudad.modo-oscuro main h2,
+.pagina-ciudad.modo-oscuro main h3,
+.pagina-ciudad.modo-oscuro main p,
+.pagina-ciudad.modo-oscuro .site-footer p,
+.pagina-ciudad.modo-oscuro .caracteristicas li {
+    color: #eeeeee;
+}
+
+.pagina-ciudad.modo-oscuro .caracteristicas ul,
+.pagina-ciudad.modo-oscuro .tarjeta-barrio {
+    background-color: #293a32;
+}
+
+.pagina-ciudad.modo-oscuro .site-footer {
+    background-color: #24352d;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Navbar: menú hamburguesa desplegado */
+@media (max-width: 991.98px) {
+
+    .navbar-turismo .navbar-nav {
+        gap: 0;
+        padding-top: 0.5rem;
+    }
+
+    .navbar-turismo .nav-link.active {
+        border-bottom-color: transparent;
+        border-left: 3px solid var(--nav-activo);
+        padding-left: 0.6rem;
+    }
+
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+
+    .pagina-ciudad .contenedor-ciudad {
+        width: 92%;
+    }
+
+    .pagina-ciudad .presentacion-ciudad {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pagina-ciudad .texto-presentacion h2 {
+        font-size: 26px;
+    }
+
+    .pagina-ciudad .imagen-ciudad {
+        width: 100%;
+        height: 180px;
+    }
+
+    .pagina-ciudad .contenedor-barrios {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .pagina-ciudad .tarjeta-barrio img {
+        height: 110px;
+    }
+
+    .pagina-ciudad .site-footer {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+    }
+
+    .contacto-info {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    .pagina-ciudad .contenedor-barrios {
+        grid-template-columns: 1fr;
+    }
+
 }
